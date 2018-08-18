@@ -5,10 +5,16 @@
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/items.html
 
-import scrapy
+from scrapy import Item, Field
 
 
-class ZufangItem(scrapy.Item):
+class ZufangItem(Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    collection = 'tongcheng58'
+    describe = Field()
+    href = Field()
+    room = Field()
+    location = Field()
+    price = Field()
+
